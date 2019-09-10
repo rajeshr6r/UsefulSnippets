@@ -1,0 +1,6 @@
+# Installing a package 
+
+pip3 install --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org {package-name}
+
+# Upgrading PIP 
+python -m pip install --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org --upgrade pip

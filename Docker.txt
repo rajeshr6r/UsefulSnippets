@@ -1,0 +1,42 @@
+#install docker
+yum install docker
+
+#start docker
+service docker start 
+
+#run helloworld
+docker run hello-world
+
+#itd means run in background
+#port mapping
+#name of docker 
+docker run -itd -p 80:80 httpd  
+
+#go into container and see
+docker exec -it <dockerid> /bin/sh
+docker exec -it 7efb69ba2250 /bin/sh
+then run ls 
+pwd
+
+#docker stop
+docker stop <image>
+
+#list docker image
+docker image ls
+#create a docker file for  your config
+FROM httpd
+COPY . /usr/local/apache2/htdocs/
+
+#push the image to docker
+docker image tag <image> <dockeruserid>/<nameofimage>:latest
+
+#login to docker
+docker login
+
+#push to docker
+docker image ls
+
+docker push <image>
+
+
+

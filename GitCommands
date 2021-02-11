@@ -1,0 +1,32 @@
+# create a repo  -- This creates a folder 
+git init testazurefunctions
+
+#then cd into the repo 
+
+cd testazurefunctions
+
+# create a Readme.MD
+touch Readme.MD
+
+# add the file 
+git add Readme.MD
+
+# commit it 
+git commit -m "Readme Added"
+
+#now add remote origin 
+git remote add origin https://github.com/rajeshr6r/testazurefunctions.git
+
+# now push 
+git push origin master
+
+# At this state it will ask for credentials supply them
+
+# configuring git
+# in case if you want to use it  locally then use it with the --global
+
+git config --global user.name "Mona Lisa"
+
+git config --global user.password "password"
+
+

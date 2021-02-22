@@ -1,0 +1,12 @@
+#!/bin/bash
+sudo yum update -y
+sudo yum -y install httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo systemctl is-enabled httpd
+my_ip=$(curl http://checkip.amazonaws.com)
+sudo echo "<html><body>Hello your webserver ${my_ip} is up and running</body></html>" > /var/www/html/index.html
+
+
+#to get user metadata
+http://169.254.169.254/latest/user-data

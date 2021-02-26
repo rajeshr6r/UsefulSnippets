@@ -5,3 +5,7 @@ https://linuxhandbook.com/linux-commands/
 DeepLearning and Machine Learning Content
 
 https://deep-learning-drizzle.github.io/index.html
+
+#Azure Setup of IIS Deployemt with CICD
+
+https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups?view=azure-devops

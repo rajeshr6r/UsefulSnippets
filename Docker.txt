@@ -38,5 +38,13 @@ docker image ls
 
 docker push <image>
 
+#get all running containers 
+sudo docker ps -a
+
+#get the specific container id
+#stop and remove the duplicated container / force remove it
+
+sudo docker stop <container_id>
+sudo docker rm <container_id>
 
 

@@ -1,0 +1,23 @@
+1. Login to firebase and Gcloud:
+
+firebase login
+gcloud auth login
+2. See a list of your projects and connect to one:
+
+firebase projects:list
+firebase use your-project-name
+
+gcloud projects list
+gcloud config set project your-project-name
+3. Export your production data to gcloud bucket with chosen name:
+
+gcloud firestore export gs://your-project-name.appspot.com/your-choosen-folder-name
+4. Now copy this folder to your local machine, I do that in functions folder directly:
+
+cd functions
+gsutil -m cp -r gs://your-project-name.appspot.com/your-choosen-folder-name .
+5. Now we just want to import this folder. This should work with the basic command, thanks to latest update from Firebase team https://github.com/firebase/firebase-tools/pull/2519.
+
+firebase emulators:start --import ./your-choosen-folder-name
+
+++# https://medium.com/firebase-developers/how-to-import-production-data-from-cloud-firestore-to-the-local-emulator-e82ae1c6ed8+++++++++++++

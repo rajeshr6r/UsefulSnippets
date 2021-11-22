@@ -14,7 +14,10 @@ gcloud config set project your-project-name
 gcloud firestore export gs://your-project-name.appspot.com/your-choosen-folder-name
 4. Now copy this folder to your local machine, I do that in functions folder directly:
 
-cd functions
+cd functions 
+
+//warning .. include the final . which denotes the current working directory you idiot
+
 gsutil -m cp -r gs://your-project-name.appspot.com/your-choosen-folder-name .
 5. Now we just want to import this folder. This should work with the basic command, thanks to latest update from Firebase team https://github.com/firebase/firebase-tools/pull/2519.
 

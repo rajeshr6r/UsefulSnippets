@@ -1,2 +1,5 @@
 xev -event keyboard to find the key thats causing trouble
 xmodmap -e 'keycode <numberofkey>=' -- Disabling the key
+
+#Then add this 
+chmod +x /etc/init.d/start_my_app

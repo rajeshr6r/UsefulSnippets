@@ -1,6 +1,6 @@
 1. Login to firebase and Gcloud:
 
-firebase login
+firebase login --no-localhost
 gcloud auth login
 2. See a list of your projects and connect to one:
 

@@ -12,6 +12,8 @@ gcloud config set project your-project-name
 3. Export your production data to gcloud bucket with chosen name:
 
 gcloud firestore export gs://your-project-name.appspot.com/your-choosen-folder-name
+
+gcloud firestore export gs://fostrprodbackups/backups/prodbackup290120220945CET
 4. Now copy this folder to your local machine, I do that in functions folder directly:
 
 cd functions 
